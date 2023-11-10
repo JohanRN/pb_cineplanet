@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../src/index.ts"],
+  "sourcesContent": ["export const handler = async () => {\r\n    try {\r\n      return {\r\n        statusCode: 200,\r\n        body: JSON.stringify({ message: 'Hello, this is your AWS Lambda function!' }),\r\n      };\r\n    } catch (error) {\r\n      console.error('Error:', error);\r\n      return {\r\n        statusCode: 500,\r\n        body: JSON.stringify({ message: 'Internal Server Error' }),\r\n      };\r\n    }\r\n};"],
+  "mappings": "yaAAA,IAAAA,EAAA,GAAAC,EAAAD,EAAA,aAAAE,IAAA,eAAAC,EAAAH,GAAO,IAAME,EAAU,SAAY,CAC/B,GAAI,CACF,MAAO,CACL,WAAY,IACZ,KAAM,KAAK,UAAU,CAAE,QAAS,0CAA2C,CAAC,CAC9E,CACF,OAASE,EAAP,CACA,eAAQ,MAAM,SAAUA,CAAK,EACtB,CACL,WAAY,IACZ,KAAM,KAAK,UAAU,CAAE,QAAS,uBAAwB,CAAC,CAC3D,CACF,CACJ",
+  "names": ["src_exports", "__export", "handler", "__toCommonJS", "error"]
+}
